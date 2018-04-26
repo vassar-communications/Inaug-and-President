@@ -1,0 +1,15 @@
+.modulesArea__row--twocols {
+	display: flex;
+	
+	.Module--halfWidth:first-child {
+		padding-right: 1em;
+	}
+	.Module--halfWidth {
+		@media screen and (min-width: $medium) {
+			width: 50%;
+		}
+	}
+}
+.Module__list {
+	@include cleanlist(1px solid #eee, 0.4em);
+}
