@@ -8,6 +8,7 @@
 @import "_modules-president/_all";
 @import "_sections/president_homepage/style.scss";
 @import "_sections/pres_point-of-view/_all.scss";
+@import "_sections/president_contact/style.scss";
 
 
 @import "_frameworks/_basictools";
@@ -60,23 +61,22 @@
 			font-size: 0.8em;
 		}
 	}
-
-	.u-NavSite__main .u-NavSite__level--1 > .u-NavSite__itemContainer:first-child {
-		a {
-			font-weight: bold;
-		    font-size: 0.9em;
-		    text-transform: uppercase;
-		    letter-spacing: 0.1em;
-		    font-family: $serif-display;
-		    
-		    svg {
-			    display: none;
-		    }
-		}
+}
+.u-NavSite__main .u-NavSite__level--1 > .u-NavSite__itemContainer:first-child {
+	a {
+		font-weight: bold;
+	    font-size: 0.9em;
+	    text-transform: uppercase;
+	    letter-spacing: 0.1em;
+	    font-family: $serif-display;
+	    
+	    svg {
+		    display: none;
+	    }
 	}
-
 }
 
+@import "president-universal";
 
 
 

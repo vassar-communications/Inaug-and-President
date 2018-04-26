@@ -1,5 +1,7 @@
 .modulesArea__row--twocols {
-	display: flex;
+	@media screen and (min-width: $medium) {
+		display: flex;
+	}
 	
 	.Module--halfWidth:first-child {
 		padding-right: 1em;

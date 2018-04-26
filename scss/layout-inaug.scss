@@ -14,9 +14,13 @@
 	.u-lMain {
 		width: 75%;
 	}
-	.u-lFooter {
-		width: 75%;
-		margin-left: 25%;
-		padding: 2em;
+}
+.u-pageInner {
+	@media screen and (min-width: $medium) {
+		.u-lFooter {
+			width: 75%;
+			margin-left: 25%;
+			padding: 2em;
+		}
 	}
 }
