@@ -21,6 +21,7 @@
 /* 600px divided by 16px */
 /* 800px divided by 16px */
 /* 1000px divided by 16px */
+/* 1000px divided by 16px */
 .row, .col {
   overflow: hidden; }
 
@@ -811,6 +812,9 @@ h3.Module__header {
   margin-top: 0.8em;
   padding-top: 0.8em;
   border-top: 1px solid #eee; }
+  .video__item div {
+    clear: both;
+    font-size: 1.2em; }
   .video__item:first-child {
     margin-top: 0;
     padding-top: 0;
@@ -821,15 +825,21 @@ h3.Module__header {
     margin: 0;
     font-size: 1em;
     font-weight: bold; }
+    @media screen and (min-width: 45em) {
+      .video__item .video__date {
+        float: left;
+        margin-right: 0.4em; } }
   .video__item .video__caption {
-    font-size: 0.8em;
     line-height: 1.2;
-    font-family: europa, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    color: #888; }
+    font-size: 1.1em;
+    margin-top: 0.3em;
+    /*		font-size: 0.8em;
+    		font-family: $sans-serif;
+    		font-weight: 400;
+    		color: #888; */ }
   .video__item .video__location {
     margin: 0 0 0.2em 0;
-    font-size: 0.9em;
+    font-size: 1em;
     color: #888; }
   .video__item .u-Video {
     margin: 0; }
@@ -840,6 +850,8 @@ h3.Module__header {
   border-bottom: 1px solid #eee; }
 .u-folderContact h2.Module__header {
   font: bold 1.1em "chaparral-pro", Georgia, Times, serif; }
+.u-folderContact h3 {
+  margin: 2em 0 1em 0; }
 
 /*	FUNCTIONS
 	========= */
@@ -967,7 +979,7 @@ h2 {
   font: normal 1.5em/1.1 "chaparral-pro", Georgia, Times, serif; }
 
 h3 {
-  font: bold 1.1em "chaparral-pro", Georgia, Times, serif; }
+  font: bold 1.2em "chaparral-pro", Georgia, Times, serif; }
 
 h4 {
   font: bold 0.86em "chaparral-pro", Georgia, Times, serif; }
@@ -1043,6 +1055,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     position: static; } }
 
+.u-lContent hr {
+  clear: both; }
+
 .u-lContent,
 .u-lFooter,
 .u-lHeader,
@@ -1097,13 +1112,23 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 5em; }
   @media screen and (min-width: 37.5em) {
     .PageContent {
-      padding-top: 0; } }
+      padding-top: 5em; } }
   @media screen and (min-width: 45em) {
     .PageContent {
       padding-top: 0; } }
   @media screen and (min-width: 62.5em) {
     .PageContent {
       margin-top: 0; } }
+
+h3 {
+  margin-bottom: 0.8em; }
+
+article {
+  padding-bottom: 1em; }
+
+.u-ArticleNavGroup a,
+article a {
+  text-decoration: none !important; }
 
 .u-lContent hr {
   border-top: 1px solid #eee;
@@ -1134,6 +1159,10 @@ blockquote {
     font-size: 1.4em;
     font-size: calc(0.7em + 0.5 * ((100vw - 20em) / 60)); } }
 @media screen and (min-width: 62.5em) {
+  body {
+    font-size: 1.4em;
+    font-size: calc(0.6em + 0.5 * ((100vw - 20em) / 60)); } }
+@media screen and (min-width: 72em) {
   body {
     font-size: 1.4em;
     font-size: calc(0.5em + 0.5 * ((100vw - 20em) / 60)); } }

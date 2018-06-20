@@ -22,6 +22,11 @@ body {
 		position: static;
 	}
 }
+.u-lContent {
+	hr {
+		clear: both;
+	}
+}
 .u-lContent,
 .u-lFooter,
 .u-lHeader,
@@ -83,7 +88,7 @@ body {
 .PageContent {
 	padding-top: 5em;
 	@media screen and (min-width: 37.5em) {
-		padding-top: 0;
+		padding-top: 5em;
 	}
 	@media screen and (min-width: $small) {
 		padding-top: 0;
@@ -91,4 +96,14 @@ body {
 	@media screen and (min-width: $large) {
 		margin-top: 0;
 	}
+}
+h3 {
+	margin-bottom: 0.8em;
+}
+article {
+    padding-bottom: 1em;
+}
+.u-ArticleNavGroup a,
+article a {
+    text-decoration: none !important;
 }
