@@ -201,17 +201,20 @@
 		.u-lContent {
 			margin: 0;
 			padding: 0;
+			width: 100%;
+			margin-top: -1px;
+
+			/*
+			height: 100vh;
+			min-height: 32em;
 			background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
 			background-size: cover;
 			background-position: center center;
-			width: 100%;
-			height: 100vh;
-			min-height: 32em;
-			margin-top: -1px;
 			
 			img {
 				display: none;
 			}
+			*/
 		}
 		.u-lFooter {
 			background: #F2EFE9;
@@ -251,10 +254,25 @@
 	}
 }
 
-
-
-
-
+.hp-module {
+	h2 {
+		font-weight: bold;
+		
+		a {
+			background: none;
+			text-shadow: none;
+			
+			&:hover, &:visited:hover {
+				color: #746661;
+			}
+		}
+	}
+}
+.recent-messages {
+    padding: 2em;
+    margin-bottom: 2em;
+    max-width: 30em;
+}
 
 
 
