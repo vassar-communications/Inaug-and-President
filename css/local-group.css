@@ -602,6 +602,51 @@ h3.Module__header {
   width: 2rem;
   height: 2rem; }
 
+.current {
+  position: fixed;
+  top: 0; }
+
+.faq__index {
+  background: #fff;
+  border-top: 1px solid #F0EEEB;
+  border-bottom: 1px solid #F0EEEB; }
+  @media screen and (min-width: 50em) {
+    .faq__index {
+      position: sticky;
+      top: 0; } }
+  .faq__index li {
+    text-align: center;
+    border: none;
+    /*	    font: bold .9em/1 europa, Helvetica;
+    	    text-transform: uppercase; */
+    margin: 0.45em 0;
+    padding: 0; }
+    .faq__index li a {
+      border: none !important;
+      background: none;
+      text-shadow: none !important;
+      text-decoration: none !important;
+      font-weight: bold;
+      font-family: europa, Helvetica, Arial, sans-serif; }
+    .faq__index li, .faq__index li a:hover {
+      background: none;
+      color: #aaa; }
+
+@media screen and (min-width: 45em) {
+  .faq__index {
+    text-align: center; }
+    .faq__index li {
+      margin: 0 !important;
+      display: inline-block;
+      padding: .45em .5em .45em .5em; } }
+@media screen and (min-width: 50em) {
+  .faq__index li {
+    margin: 0;
+    display: inline-block;
+    padding: .45em .75em .45em .75em; } }
+.u-lMain .faq__index:nth-of-type(2) {
+  display: none; }
+
 /*	PRESIDENT-SPECIFIC */
 .SocialAccount__iconContainer {
   display: inline-block;
@@ -869,6 +914,11 @@ h3.Module__header {
   font: bold 1.1em "chaparral-pro", Georgia, Times, serif; }
 .u-folderContact h3 {
   margin: 2em 0 1em 0; }
+
+.u-folderSenior-team .u-Figure--left {
+  float: none; }
+.u-folderSenior-team hr {
+  display: none; }
 
 /*	FUNCTIONS
 	========= */
