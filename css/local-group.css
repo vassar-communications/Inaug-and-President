@@ -10,7 +10,7 @@
 	------ */
 /*	Layout
 	------ */
-                      				/*	For a Stories-like layout where the content is in one centered
+/*	For a Stories-like layout where the content is in one centered
 										column, width-standard determines the max width of a 
 										standard content block. (Doesn't apply to a typical 
 										nav-content-sidebar 3col layout.) 
@@ -35,22 +35,18 @@
 @media screen and (min-width: 45em) {
   .col.small-50 {
     width: 50%; }
-
   .col.small-16 {
     width: 16.666%; }
-
   .col.small-25 {
     width: 25%; } }
+
 @media screen and (min-width: 50em) {
   .col.med-50 {
     width: 50%; }
-
   .col.med-16 {
     width: 16.666%; }
-
   .col.med-25 {
     width: 25%; }
-
   .col--twocols-med {
     max-width: 60em;
     margin-left: auto;
@@ -64,6 +60,7 @@
     -webkit-column-rule: 1px solid #eee;
     -moz-column-rule: 1px solid #eee;
     column-rule: 1px solid #eee; } }
+
 .col {
   padding: 2em; }
   @media screen and (min-width: 50em) {
@@ -113,25 +110,25 @@
 
 .u-pageInner {
   /*	
-  	.u-Masthead__vassar {
-  		@media screen and (min-width: $small) {
-  			order: 1;
-  		    border-right: 1px solid #eee;
-  		    margin-right: 1rem;
-  		    margin-left: 0;
-  
-  		
-  			.u-Masthead__vassar--link {
-  			    font-size: 3.85rem;
-  			    color: #882345;
-  			    display: inline-block;
-  			    line-height: 1;
-  			    margin-top: -0.2rem;
-  			    margin-right: 1rem;
-  			}
-  		}
-  	}
-  */ }
+	.u-Masthead__vassar {
+		@media screen and (min-width: $small) {
+			order: 1;
+		    border-right: 1px solid #eee;
+		    margin-right: 1rem;
+		    margin-left: 0;
+
+		
+			.u-Masthead__vassar--link {
+			    font-size: 3.85rem;
+			    color: #882345;
+			    display: inline-block;
+			    line-height: 1;
+			    margin-top: -0.2rem;
+			    margin-right: 1rem;
+			}
+		}
+	}
+*/ }
   .u-pageInner .u-lHeader {
     padding-bottom: 1rem; }
     @media screen and (min-width: 50em) {
@@ -181,22 +178,19 @@
   *::-ms-backdrop, .u-Masthead, .u-Masthead__vassar, .u-Masthead__vassar--link {
     display: block !important;
     line-height: normal !important; }
-
   *::-ms-backdrop,
   .u-Masthead__siteName,
   .u-Masthead__vassar {
     order: initial; }
-
   *::-ms-backdrop, .u-Masthead__vassar--link {
     margin-left: 0 !important; }
-
   *::-ms-backdrop, .u-lHeader {
     overflow: hidden !important;
     clear: both !important;
     height: 11em !important; }
-
   *::-ms-backdrop, body {
     overflow: hidden !important; } }
+
 /*
 	Add the following to your site's config file
 	--------------------------------------------
@@ -224,17 +218,19 @@
 
 .u-lFooter * {
   font-size: 1rem !important; }
+
 .u-lFooter .u-VCard__label {
   display: none; }
+
 .u-lFooter .u-VCard__org {
   font-weight: bold; }
 
 .u-NavSite__itemContainer {
   /*	Generic list-items have a specific size applied to them. On
-  	nav, the links also have a specific size. The size applied to
-  	the list item compounds the size of the nav item. Setting the list-item
-  	font-size to 1em basically undoes the font-size.
-  */
+		nav, the links also have a specific size. The size applied to
+		the list item compounds the size of the nav item. Setting the list-item
+		font-size to 1em basically undoes the font-size.
+	*/
   font-size: 1em; }
 
 .u-NavSite__item {
@@ -278,9 +274,9 @@
     content: "";
     position: absolute;
     /*		    top: 0;
-    		    left: 0;
-    		    bottom: 0;
-    		    right: 0; */
+		    left: 0;
+		    bottom: 0;
+		    right: 0; */
     height: 0em;
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
@@ -346,6 +342,7 @@
       height: 6em; }
       .js.searchOpen .u-Search .u-Search__field {
         height: auto; } }
+
 .u-ArticleListItem__summary {
   margin-bottom: 0; }
 
@@ -369,8 +366,10 @@
 @media screen and (min-width: 50em) {
   .modulesArea__row--twocols {
     display: flex; } }
+
 .modulesArea__row--twocols .Module--halfWidth:first-child {
   padding-right: 1em; }
+
 @media screen and (min-width: 50em) {
   .modulesArea__row--twocols .Module--halfWidth {
     width: 50%; } }
@@ -397,9 +396,9 @@
   padding-bottom: 3em;
   text-align: center;
   /*
-  	.SocialAccount__iconList {
-  		@include cleanlist(none, 0);
-  	} */ }
+	.SocialAccount__iconList {
+		@include cleanlist(none, 0);
+	} */ }
   @media screen and (min-width: 50em) {
     .u-ExtendedFooter {
       display: flex;
@@ -504,26 +503,34 @@
 .Module__table .directoryContactInfo--person {
   width: 40%;
   padding-left: 0; }
+
 .Module__table .directoryContactInfo--numbers {
   width: 30%;
   text-align: right;
   padding-right: 0; }
+
 .Module__table tbody tr:nth-child(odd) {
   background: none; }
+
 .Module__table tbody td, .Module__table tbody th {
   border: none; }
+
 .Module__table tr {
   border-top: 1px solid #eee; }
   .Module__table tr:first-of-type {
     display: none; }
+
 .Module__table td {
   font-family: "chaparral-pro", Georgia, Times, serif; }
+
 .Module__table .u-BioList__name {
   font-size: 1em;
   font-family: "chaparral-pro", Georgia, Times, serif; }
+
 .Module__table .directoryContactInfo--title {
   font-style: italic;
   font-weight: 100; }
+
 .Module__table .directoryContactInfo__data {
   font-weight: 100;
   font-size: 0.9em;
@@ -618,7 +625,7 @@ h3.Module__header {
     text-align: center;
     border: none;
     /*	    font: bold .9em/1 europa, Helvetica;
-    	    text-transform: uppercase; */
+	    text-transform: uppercase; */
     margin: 0.45em 0;
     padding: 0; }
     .faq__index li a {
@@ -639,11 +646,13 @@ h3.Module__header {
       margin: 0 !important;
       display: inline-block;
       padding: .45em .5em .45em .5em; } }
+
 @media screen and (min-width: 50em) {
   .faq__index li {
     margin: 0;
     display: inline-block;
     padding: .45em .75em .45em .75em; } }
+
 .u-lMain .faq__index:nth-of-type(2) {
   display: none; }
 
@@ -822,16 +831,16 @@ h3.Module__header {
       width: 100%;
       margin-top: -1px;
       /*
-      height: 100vh;
-      min-height: 32em;
-      background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
-      background-size: cover;
-      background-position: center center;
-      
-      img {
-      	display: none;
-      }
-      */ }
+			height: 100vh;
+			min-height: 32em;
+			background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
+			background-size: cover;
+			background-position: center center;
+			
+			img {
+				display: none;
+			}
+			*/ }
     .u-pageHome .u-lFooter {
       background: #F2EFE9;
       float: right; }
@@ -896,9 +905,9 @@ h3.Module__header {
     font-size: 1.1em;
     margin-top: 0.3em;
     /*		font-size: 0.8em;
-    		font-family: $sans-serif;
-    		font-weight: 400;
-    		color: #888; */ }
+		font-family: $sans-serif;
+		font-weight: 400;
+		color: #888; */ }
   .video__item .video__location {
     margin: 0 0 0.2em 0;
     font-size: 1em;
@@ -910,13 +919,16 @@ h3.Module__header {
   margin-bottom: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #eee; }
+
 .u-folderContact h2.Module__header {
   font: bold 1.1em "chaparral-pro", Georgia, Times, serif; }
+
 .u-folderContact h3 {
   margin: 2em 0 1em 0; }
 
 .u-folderSenior-team .u-Figure--left {
   float: none; }
+
 .u-folderSenior-team hr {
   display: none; }
 
@@ -965,12 +977,15 @@ h3.Module__header {
 @media screen and (min-width: 50em) {
   .position-absolute {
     position: absolute; } }
+
 @media screen and (min-width: 45em) {
   .position-absolute {
     position: absolute; } }
+
 @media screen and (min-width: 50em) {
   .position-absolute {
     position: absolute; } }
+
 @media screen and (min-width: 62.5em) {
   .position-absolute {
     position: absolute; } }
@@ -1020,10 +1035,13 @@ $BASICSTYLE__selection-color: #ff0;
 */
 a:link {
   color: #ce1e46; }
+
 a:visited {
   color: #AB6776; }
+
 a:hover, a:visited:hover, a:focus {
   color: #000; }
+
 a:active, a:visited:active {
   color: #f00; }
 
@@ -1088,11 +1106,13 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0 !important;
   text-transform: none !important;
   margin-top: 0 !important; }
+
 .u-ArticleGroup .u-ArticleListItem {
   padding-bottom: 0; }
 
 .u-ArticleNavGroup__navButton.u-ArticleNavGroup__navButton--more {
   color: #666; }
+
 .u-ArticleNavGroup__navButton.u-ArticleNavGroup__navButton--archive {
   color: #aaa; }
 
@@ -1165,6 +1185,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 50em) {
   .u-lMain {
     width: 78.5%; } }
+
 .u-Masthead__siteName {
   margin-top: 0; }
   @media screen and (min-width: 45em) {
@@ -1221,14 +1242,17 @@ blockquote {
   body {
     font-size: 1.4em;
     font-size: calc(0.7em + 0.5 * ((100vw - 20em) / 60)); } }
+
 @media screen and (min-width: 50em) {
   body {
     font-size: 1.4em;
     font-size: calc(0.7em + 0.5 * ((100vw - 20em) / 60)); } }
+
 @media screen and (min-width: 62.5em) {
   body {
     font-size: 1.4em;
     font-size: calc(0.6em + 0.5 * ((100vw - 20em) / 60)); } }
+
 @media screen and (min-width: 72em) {
   body {
     font-size: 1.4em;
@@ -1320,6 +1344,7 @@ h4 {
 .u-lMain a {
   text-decoration: underline;
   text-decoration-color: #ccc; }
+
 @media screen and (min-width: 62.5em) {
   .u-lMain a {
     text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
@@ -1423,8 +1448,9 @@ h4 {
   border-color: #777;
   border-color: #F0EEEB;
   /*		@media screen and (min-width: $small) {
-  			border-color: #F0EEEB;
-  		} */ }
+			border-color: #F0EEEB;
+		} */ }
+
 .u-NavSite__itemContainer:last-child .u-NavSite__item {
   border-color: transparent; }
 
@@ -1452,8 +1478,10 @@ h4 {
 .u-pageInner .u-NavSite,
 .u-pageInner .u-lHeader {
   padding-left: 0; }
+
 .u-pageInner .u-pageTitle {
   margin: 0 0 0.5em 0; }
+
 .u-pageInner .u-lHeader {
   float: none;
   padding-top: 1rem;
@@ -1462,6 +1490,7 @@ h4 {
   @media screen and (min-width: 45em) {
     .u-pageInner .u-lHeader {
       border-bottom: 1px solid #aaa; } }
+
 .u-pageInner .u-lMain .maintitle {
   display: block;
   line-height: 1;
@@ -1494,15 +1523,13 @@ h4 {
 @media screen and (min-width: 45em) {
   html.u-pageHome.g- {
     padding-top: 6em !important; }
-
   .g-Search__submit svg {
     width: 50% !important; }
-
   .g-Masthead__vassar--link b svg {
     left: .5em !important; }
-
   .u-pageHome.g- .u-Masthead__vassar {
     padding: 0 !important; } }
+
 @media screen {
   html.g-.is-alert {
     padding-top: 0 !important; } }
