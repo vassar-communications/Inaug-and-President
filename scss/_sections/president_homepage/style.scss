@@ -268,19 +268,45 @@
 		}
 	}
 }
-.recent-messages {
-    padding: 2em;
-    margin-bottom: 2em;
-    max-width: 30em;
+.u-pageHome .u-lContent .u-Figure {
+	margin: 0;
+margin-top: -1vw;	
 }
 
+@media only screen and (min-width: 50em) {
+	.u-pageHome {
+		background: #F2EFE9;
+	}
 
+	.u-pageHome .PageContentInner {
+		position: relative;
+	}
+	
+	.u-pageHome .PageContentInner:before {
+	    background: #fff;
+	    z-index: -1;
+	    position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    width: 24%;
+	    height: auto;
+	    height: 100vh;
+	    position: fixed;
+	}
+}	
+@media only screen and (min-width: 62.5em) {
+	.u-pageHome .PageContentInner:before {
+		width: 20%;
+	}
+}
 
-
-
-
-
-
+@media only screen and (min-width: 40em) and (max-width: 72.5em) {
+	.u-pageHome .u-lAside {
+		top: 32em !important;
+	}
+}
 
 
 

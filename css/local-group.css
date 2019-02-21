@@ -681,6 +681,60 @@ h3.Module__header {
 .modulesArea dd {
   font-size: 1.1em; }
 
+.hp-module.recent-messages {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 2em 2em 0 2em;
+  max-width: 40em;
+  padding-bottom: 2em; }
+  @media screen and (min-width: 50em) {
+    .hp-module.recent-messages {
+      margin: 3em 3em 0 3em; } }
+  @media screen and (min-width: 62.5em) {
+    .hp-module.recent-messages {
+      margin: 4em 4em 0 4em; } }
+
+.Media {
+  align-items: flex-start;
+  align-items: -webkit-flex-start;
+  margin-bottom: 1em; }
+  @media screen and (min-width: 45em) {
+    .Media {
+      display: flex;
+      display: -webkit-flex; } }
+  .Media a, .Media a:visited {
+    background: none !important;
+    text-shadow: none !important;
+    text-decoration: none !important; }
+
+.Media-figure {
+  margin-right: 1em;
+  width: 100%; }
+  @media screen and (min-width: 45em) {
+    .Media-figure {
+      width: 14em; } }
+
+.Media-body {
+  flex: 1; }
+
+.Media-body,
+.Media-body :last-child {
+  margin-bottom: 0;
+  margin-top: 1em; }
+  @media screen and (min-width: 45em) {
+    .Media-body,
+    .Media-body :last-child {
+      margin-top: 0; } }
+
+.Media-title {
+  margin: 0 0 .5em; }
+
+.Media--center {
+  align-items: center; }
+
+.Media--reverse > .Media-figure {
+  order: 1;
+  margin: 0 0 0 1em; }
+
 .u-pageHome {
   border: none;
   border-top: 0.3em solid #882345;
@@ -874,10 +928,35 @@ h3.Module__header {
     .hp-module h2 a:hover, .hp-module h2 a:visited:hover {
       color: #746661; }
 
-.recent-messages {
-  padding: 2em;
-  margin-bottom: 2em;
-  max-width: 30em; }
+.u-pageHome .u-lContent .u-Figure {
+  margin: 0;
+  margin-top: -1vw; }
+
+@media only screen and (min-width: 50em) {
+  .u-pageHome {
+    background: #F2EFE9; }
+  .u-pageHome .PageContentInner {
+    position: relative; }
+  .u-pageHome .PageContentInner:before {
+    background: #fff;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 24%;
+    height: auto;
+    height: 100vh;
+    position: fixed; } }
+
+@media only screen and (min-width: 62.5em) {
+  .u-pageHome .PageContentInner:before {
+    width: 20%; } }
+
+@media only screen and (min-width: 40em) and (max-width: 72.5em) {
+  .u-pageHome .u-lAside {
+    top: 32em !important; } }
 
 .video__item {
   margin-top: 0.8em;
@@ -1194,7 +1273,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .u-lFooter {
   padding: 0;
-  margin: 0 2rem; }
+  margin: 0 2rem;
+  padding-top: 2em; }
 
 .PageContent {
   padding-top: 5em; }
@@ -1504,6 +1584,9 @@ h4 {
   font-family: "goudy-old-style", Georgia, Times, serif; }
   .u-NavSite__main .u-NavSite__level--1 > .u-NavSite__itemContainer:first-child a svg {
     display: none; }
+
+.u-lFooter {
+  padding-top: 2em; }
 
 /* jeff */
 .g-Search__submit svg {
