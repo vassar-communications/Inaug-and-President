@@ -10,6 +10,7 @@
 	@media screen and (min-width: $medium) {
 		position: sticky;
 		top: 0;
+		z-index: 10;
 	}
 
 	li {
@@ -35,6 +36,11 @@
 	}
 }
 
+.faq__item {
+	padding-top: 3em;
+	margin-bottom: 0;
+}
+
 @media screen and (min-width: $small) {
 	.faq__index {
 	    text-align: center;
@@ -42,20 +48,15 @@
 		li {
 		    margin: 0 !important;
 		    display: inline-block;
-		    padding: .45em .5em .45em .5em;
+		    padding: 0.45em;
+		    
+		    a {
+			    font-size: 0.9em;
+		    }
 		}
 	}
 }
 
-@media screen and (min-width: $medium) {
-	.faq__index {
-		li {
-		    margin: 0;
-		    display: inline-block;
-		    padding: .45em .75em .45em .75em;
-		}
-	}
-}
 .u-lMain .faq__index:nth-of-type(2) {
     display: none;
 }
